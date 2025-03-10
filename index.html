@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-12</title>
+    <link rel="stylesheet" href="assage/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sale-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    .section-shop {
+        padding: 5em 0;
+        background-color: #212529;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .product-card .card-body {
+        flex-grow: 1;
+    }
+
+    footer {
+        background-color: #212529;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container px-4 px-lg-4">
+                <a class="navbar-brand fw-bold" href="#">Brand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active bg-secondary px-4 text-white rounded" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled px-4" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled px-4" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle disabled px-4" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-dark" type="submit"><i class="fa fa-shopping-cart me-1"></i> Card
+                            <span class="badge bg-dark text-white rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="section-shop">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="text-white fw-bold display-4">Shop in style</h1>
+                <p class="text-white-50 lead">With this shop homepage template</p>
+            </div>
+        </section>
+        <section class="section-products mt-5 mb-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Fancy Product</h5>
+                                <div>$40.00 - $80.00</div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="badge bg-success text-white sale-badge">Sale</div>
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Special Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-muted text-decoration-line-through mx-1">$20.00</span>$18.00
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="badge bg-success text-white sale-badge">Sale</div>
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Sale Item</h5>
+                                <span class="text-muted text-decoration-line-through mx-1">$50.00</span>$25.00
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Popular Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div>$40.00</div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="badge bg-success text-white sale-badge">Sale</div>
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Sale Item</h5>
+                                <span class="text-muted text-decoration-line-through mx-1">$50.00</span>$25.00
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Fancy Product</h5>
+                                <div>$120.00 - $280.00</div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="badge bg-success text-white sale-badge">Sale</div>
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Special Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-muted text-decoration-line-through mx-1">$20.00</span>$18.00
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card product-card">
+                            <div class="product-image">
+                                <img src="assage/images/450x300.jpg" alt="">
+                            </div>
+                            <div class="card-body p-4 text-center">
+                                <h5 class="fw-bold">Popular Item</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div>$40.00</div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                                <a class="btn btn-outline-dark" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5">
+        <div class="container text-center text-white">
+            <p class="m-0">Copyright © Your Website 2025</p>
+        </div>
+    </footer>
+    <script src="assage/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
